@@ -1,0 +1,29 @@
+.search-container {
+    // display: flex;
+    // align-items: center;
+    border: 1px solid var(--color-secundario);
+    // border-radius: 6px;
+    padding: 4px 10px;
+    width: 630px;
+    background-color: var(--color-primario);
+
+    i {
+        color: var(--color-secundario);
+        font-size: 14px;
+        // margin-right: 8px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        // flex: 1;
+        font-size: 14px;
+        color: var(--color-texto);
+        background: transparent;
+        text-align: right;
+
+        &::placeholder {
+            color: #888;
+        }
+    }
+}

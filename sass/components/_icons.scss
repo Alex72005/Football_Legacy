@@ -1,0 +1,13 @@
+.icons {
+    i {
+        margin-left: 20px;
+        font-size: 22px;
+        cursor: pointer;
+        color: var(--color-texto);
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--color-secundario);
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.item {
+    position: relative;
+    background: var(--color-gris);
+    // border: 1px solid #222;
+    // padding: 10px;
+    // text-align: center;
+    // border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+    }
+
+    img {
+        // width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background-color: var(--color-primario);
+        // border-radius: 4px;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: var(--color-texto);
+    }
+}
+
+.link-producto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    // border-radius: 50%;
+    // padding: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    i {
+        color: var(--color-texto);
+        font-size: 16px;
+        line-height: 1 !important; // evita que Bootstrap lo estire
+        display: block !important;
+        transition: color 0.3s ease;
+    }
+}
+
+.item:hover {
+    .fav-icon {
+        background: rgba(0, 191, 255, 0.3);
+    }
+}
+
+.fav-icon:hover i {
+    color: var(--color-acento);
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.precio-antes {
+    text-decoration: line-through;
+    color: var(--color-acento);
+    margin-right: 6px;
+    opacity: 0.8;
+}

@@ -6,161 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adidas Copa Pure III Pro FG</title>
     <link rel="icon" type="image/x-icon" href="../../img/logo.ico">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <a href="../../index.html" class="logo">
-            <img src="../../img/logo.png" alt="Logo Football Legacy">
-            <h1>Football<br>Legacy</h1>
-        </a>
+    <div class="container-fluid p-0">
 
-        <div class="search-container">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search">
-        </div>
-
-        <div class="icons">
-            <a href="../login.html"><i class="fa-regular fa-user"></i></a>
-            <a href="../favoritos.html"><i class="fa-regular fa-heart"></i></a>
-            <a href="../carrito.html"><i class="fa-solid fa-bag-shopping"></i></a>
-        </div>
-    </header>
-
-    <!-- NAV -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="../camisetas.html">Camisetas</a></li>
-            <li><a href="../botas.html">Botas Fútbol</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
-        </ul>
-    </nav>
-
-    <!-- PRODUCTO -->
-    <section class="producto">
-        <div class="producto-contenedor">
-            <div class="imagenes-botas">
-                <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-III-fuera.png"
-                    alt="Camiseta Messi frente">
-                <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-iii-pro-dentro.png"
-                    alt="Camiseta Messi espalda">
-                <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-iii-pro-arriba.png"
-                    alt="Camiseta Messi espalda">
-                <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-iii-pro-suela.png"
-                    alt="Camiseta Messi espalda">
-            </div>
-
-            <div class="detalles">
-                <h2>Adidas Copa Pure III Pro FG</h2>
-                <p class="camisetas-botas-precio">150 €</p>
-
-                <div class="tallas">
-                    <button>40</button>
-                    <button>40 2/3</button>
-                    <button class="active">41</button>
-                    <button>41 2/3</button>
-                    <button>42</button>
-                    <button>42 2/3</button>
-                    <button>43</button>
-                    <button>43 2/3</button>
-                    <button>44</button>
-                    <button>44 2/3</button>
-                    <button>45</button>
-                    <button>45 2/3</button>
-                    <button>46</button>
-                    <button>46 2/3</button>
-                    <button>47</button>
-                </div>
-
-                <div class="cantidad">
-                    <button class="menos">−</button>
-                    <input type="text" value="1">
-                    <button class="mas">+</button>
-                </div>
-
-                <div class="acciones">
-                    <button class="btn-cart">Añadir al carrito</button>
-                    <div class="fav-icon-producto">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-
-                <div class="descripcion">
-                    <h3>Detalles</h3>
-                    <p>
-                        Las adidas Copa Pure III Pro fusionan la tradición y la innovación, ofreciendo una comodidad
-                        excepcional y un toque limpio en cada pase.
-                        Fabricadas con materiales premium y un diseño clásico, son la elección ideal para quienes
-                        valoran la elegancia y el control sobre el balón.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
+        <!-- HEADER -->
+        <header class="header d-flex justify-content-between align-items-center">
             <a href="../../index.html" class="logo">
                 <img src="../../img/logo.png" alt="Logo Football Legacy">
-                <h1>Football<br>Legacy</h1>
+                <h1 class="logo-title">Football<br>Legacy</h1>
             </a>
-            <div class="footer-columns">
-                <div>
-                    <h4>Navegación Rápida</h4>
-                    <ul>
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="../camisetas.html">Camisetas</a></li>
-                        <li><a href="../botas.html">Botas Fútbol</a></li>
-                        <li><a href="">Contacto</a></li>
-                        <li><a href="">Sobre Nosotros</a></li>
-                    </ul>
+
+            <div class="search-container d-flex align-items-center rounded-2">
+                <i class="fa fa-search me-2"></i>
+                <input class="flex-fill" type="text" placeholder="Search">
+            </div>
+
+            <div class="icons">
+                <a href="../login.html"><i class="fa-regular fa-user"></i></a>
+                <a href="../favoritos.html"><i class="fa-regular fa-heart"></i></a>
+                <a href="../carrito.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </header>
+
+        <!-- NAV -->
+        <nav class="navbar d-flex justify-content-center align-items-center">
+            <ul class="d-flex justify-content-center align-items-center">
+                <li class="d-flex align-items-center"><a class="d-flex align-items-center lh-1" href="../../index.html">Inicio</a></li>
+                <li class="d-flex align-items-center"><a class="d-flex align-items-center lh-1" href="../camisetas.html">Camisetas</a></li>
+                <li class="d-flex align-items-center"><a class="d-flex align-items-center lh-1" href="../botas.html">Botas Fútbol</a></li>
+                <li class="d-flex align-items-center"><a class="d-flex align-items-center lh-1" href="">Contacto</a></li>
+                <li class="d-flex align-items-center"><a class="d-flex align-items-center lh-1" href="">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <!-- PRODUCTO -->
+        <section class="producto">
+            <div class="producto-contenedor">
+                <div class="imagenes-botas">
+                    <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-III-fuera.png"
+                        alt="Camiseta Messi frente">
+                    <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-iii-pro-dentro.png"
+                        alt="Camiseta Messi espalda">
+                    <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-iii-pro-arriba.png"
+                        alt="Camiseta Messi espalda">
+                    <img src="../../img/botas/adidas-copa-pure-III/adidas-copa-pure-iii-pro-suela.png"
+                        alt="Camiseta Messi espalda">
                 </div>
-                <div>
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="">Política de Cookies</a></li>
-                        <li><a href="">Política de Privacidad</a></li>
-                        <li><a href="">Aviso Legal</a></li>
-                        <li><a href="">Accesibilidad</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>Atención al cliente</li>
-                        <li>Alejandro Santos Merina</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Redes Sociales</h4>
-                    <ul class="redes-sociales">
-                        <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-                        <li><a href=""><i class="fa-brands fa-x-twitter"></i>X(Twitter)</a></li>
-                    </ul>
+
+                <div class="detalles">
+                    <h2>Adidas Copa Pure III Pro FG</h2>
+                    <p class="camisetas-botas-precio">150 €</p>
+
+                    <div class="tallas">
+                        <button class="rounded-1 py-2">40</button>
+                        <button class="rounded-1 py-2">40 2/3</button>
+                        <button class="rounded-1 py-2 active">41</button>
+                        <button class="rounded-1 py-2">41 2/3</button>
+                        <button class="rounded-1 py-2">42</button>
+                        <button class="rounded-1 py-2">42 2/3</button>
+                        <button class="rounded-1 py-2">43</button>
+                        <button class="rounded-1 py-2">43 2/3</button>
+                        <button class="rounded-1 py-2">44</button>
+                        <button class="rounded-1 py-2">44 2/3</button>
+                        <button class="rounded-1 py-2">45</button>
+                        <button class="rounded-1 py-2">45 2/3</button>
+                        <button class="rounded-1 py-2">46</button>
+                        <button class="rounded-1 py-2">46 2/3</button>
+                        <button class="rounded-1 py-2">47</button>
+                    </div>
+
+                    <div class="cantidad">
+                        <button class="fw-bold rounded-2 d-flex justify-content-center align-items-center">−</button>
+                        <input type="text" value="1">
+                        <button class="fw-bold rounded-2 d-flex justify-content-center align-items-center">+</button>
+                    </div>
+
+                    <div class="acciones">
+                        <button class="btn-cart btn-cart flex-fill py-3 rounded-2 text-center fw-bold">Añadir al carrito</button>
+                        <div class="fav-icon-producto">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="descripcion">
+                        <h3>Detalles</h3>
+                        <p>
+                            Las adidas Copa Pure III Pro fusionan la tradición y la innovación, ofreciendo una comodidad
+                            excepcional y un toque limpio en cada pase.
+                            Fabricadas con materiales premium y un diseño clásico, son la elección ideal para quienes
+                            valoran la elegancia y el control sobre el balón.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="licencia">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-                <img alt="Licencia Creative Commons" style="border-width:0"
-                    src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-            </a>
-            <p>
-                Esta obra de <strong>Football Legacy</strong> está bajo una
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content d-flex justify-content-between align-items-center">
+                <a href="../index.html" class="logo d-flex align-items-center gap-4">
+                    <img src="../../img/logo.png" alt="Logo Football Legacy">
+                    <h1 class="logo-title">Football<br>Legacy</h1>
+                </a>
+
+                <div class="footer-columns d-flex gap-5">
+                    <div>
+                        <h4>Navegación Rápida</h4>
+                        <ul>
+                            <li><a href="../../index.html">Inicio</a></li>
+                            <li><a href="../camisetas.html">Camisetas</a></li>
+                            <li><a href="../botas.html">Botas Fútbol</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="">Política de Cookies</a></li>
+                            <li><a href="">Política de Privacidad</a></li>
+                            <li><a href="">Aviso Legal</a></li>
+                            <li><a href="">Accesibilidad</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li>Atención al cliente</li>
+                            <li>Alejandro Santos Merina</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Redes Sociales</h4>
+                        <ul class="redes-sociales">
+                            <li><a class="d-flex align-items-center" href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li><a class="d-flex align-items-center" href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li><a class="d-flex align-items-center" href=""><i class="fa-brands fa-x-twitter"></i>X (Twitter)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="licencia">
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-                    Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional
-                </a>.
-            </p>
-        </div>
-    </footer>
+                    <img alt="Licencia Creative Commons" style="border-width:0"
+                        src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                </a>
+                <p>
+                    Esta obra de <strong>Football Legacy</strong> está bajo una
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional
+                    </a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <button id="btnAudio" class="btn-audio-floating">
+        🎵
+    </button>
+
+    <audio id="audioFondo">
+        <source src="../../audio/heatWaves.mp4" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/audio.js"></script>
 </body>
 
 </html>

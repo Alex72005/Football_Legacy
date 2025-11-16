@@ -1,0 +1,156 @@
+/* ============================
+   PRODUCTO - GLOBAL
+============================ */
+
+.producto {
+    padding: 60px 100px;
+}
+
+.producto-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ===== DETALLES ===== */
+
+.detalles {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-texto);
+}
+
+.camisetas-botas-precio {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--color-texto);
+    margin-bottom: 20px;
+}
+
+/* ===== Tallas ===== */
+
+.tallas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 12px;
+}
+
+/* ===== Cantidad ===== */
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 11px;
+}
+
+.cantidad input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #333;
+    background: var(--color-gris);
+    color: var(--color-texto);
+    border-radius: 5px;
+}
+
+/* ===== Botones ===== */
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* ===== Favoritos ===== */
+
+.fav-icon-producto {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fav-icon-producto:hover {
+    background: rgba(0, 191, 255, 0.3);
+}
+
+.fav-icon-producto i {
+    font-size: 18px;
+    color: var(--color-texto);
+    display: block !important;
+    transition: all 0.3s ease;
+}
+
+.fav-icon-producto:hover i {
+    color: var(--color-acento);
+}
+
+/* ===== Descripción ===== */
+
+.descripcion {
+    margin-top: 30px;
+}
+
+.descripcion h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--color-acento);
+}
+
+.descripcion p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ============================
+   PRODUCTO - CAMISETAS
+============================ */
+
+/* ===== IMÁGENES CAMISETAS ===== */
+
+.imagenes-camisetas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imagenes-camisetas img {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: var(--color-gris);
+}
+
+/* ============================
+   PRODUCTO - BOTAS
+============================ */
+
+/* ===== IMÁGENES BOTAS ===== */
+
+.imagenes-botas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+
+.imagenes-botas img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: var(--color-gris);
+}

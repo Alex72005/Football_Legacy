@@ -1,0 +1,19 @@
+.header {
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    padding: 30px 120px;
+    background: var(--color-gris);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+
+        img {
+            width: 50px;
+        }
+    }
+}

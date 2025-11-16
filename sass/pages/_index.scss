@@ -1,0 +1,25 @@
+/* Página Index */
+
+.productos {
+    padding: 20px 60px;
+    background-color: var(--color-primario);
+}
+
+.video-section {
+    background-color: var(--color-gris);
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+}

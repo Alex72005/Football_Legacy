@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+.logo-title {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-texto);
+    margin-top: 5px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+i {
+    line-height: 1 !important;
+}
+
+input {
+    border-radius: 8px !important;
+
+    &:focus {
+        outline: none;
+    }
+}

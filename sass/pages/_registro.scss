@@ -1,0 +1,159 @@
+/* La clase .registro está en el <body>, así que lo centramos completo */
+body.registro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 0;
+}
+
+/* Tu HTML usa este wrapper: .register-page */
+.login-register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Caja principal del formulario */
+.register-box {
+    background-color: var(--color-gris);
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+    width: 420px;
+    text-align: center;
+}
+
+/* Logo superior */
+.login-register-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    img {
+        width: 50px;
+    }
+
+    h1 {
+        color: var(--color-texto);
+        line-height: 1.1;
+        font-weight: 700;
+        font-size: 22px;
+    }
+}
+
+/* Título de la página */
+.register-box h2 {
+    color: var(--color-acento);
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 700;
+
+    i {
+        margin-right: 8px;
+    }
+}
+
+/* Subtítulos como “Dirección de envío” */
+.register-box h3 {
+    text-align: left;
+    color: var(--color-acento);
+    margin: 20px 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Grupo de inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+
+    label {
+        display: block;
+        font-weight: 700;
+        color: var(--color-texto);
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--color-secundario);
+        border-radius: 6px !important;
+        background-color: var(--color-primario);
+        color: var(--color-texto);
+        font-size: 14px;
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-acento);
+            box-shadow: 0 0 6px var(--color-secundario);
+        }
+    }
+}
+
+/* Filas de inputs (CP + País) */
+.input-row {
+    display: flex;
+    gap: 10px;
+
+    .small {
+        flex: 1;
+    }
+}
+
+/* Botón */
+.btn-login-register {
+    width: 100%;
+    background-color: var(--color-secundario);
+    border: none;
+    padding: 12px !important;
+    border-radius: 6px !important;
+    color: var(--color-primario);
+    font-weight: 600;
+    font-size: 13.33px;
+    height: auto !important; // <-- evita altura fija
+    line-height: normal !important; // <-- evita que la letra lo ensanche
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--color-acento);
+    }
+}
+
+/* Texto inferior */
+.login-register-text {
+    margin-top: 20px;
+    color: var(--color-texto);
+    font-size: 14px;
+
+    a {
+        color: var(--color-secundario);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Enlace volver al inicio */
+.volver {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--color-texto);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--color-acento);
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}

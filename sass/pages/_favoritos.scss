@@ -1,0 +1,16 @@
+.favoritos {
+    padding: 20px 100px;
+
+    h2 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        color: var(--color-acento);
+        font-weight: 700;
+    }
+
+    .fa-heart {
+        color: var(--color-acento); // amarillo
+    }
+}

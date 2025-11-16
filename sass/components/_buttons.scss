@@ -1,0 +1,88 @@
+/*carrito*/
+.btn-finalizar {
+    margin-top: 15px;
+    // width: 100%;
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+    // font-weight: bold;
+    // border-radius: 6px;
+    // padding: 10px;
+    font-size: 13.33px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--color-secundario);
+        color: var(--color-texto);
+    }
+}
+
+/*Productos*/
+.btn-cart {
+    // flex: 1;
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+    font-weight: bold;
+    // padding: 12px 0 !important; // <-- obliga altura fina
+    // border-radius: 6px;
+    font-size: 13.33px;
+    // text-align: center;
+    height: auto !important; // <-- evita altura fija
+    line-height: normal !important; // <-- evita que la letra lo ensanche
+
+    &:hover {
+        background-color: var(--color-secundario);
+        color: var(--color-texto);
+    }
+}
+
+.tallas {
+    button {
+        background: var(--color-gris);
+        color: var(--color-texto);
+        border: 1px solid #333;
+        // border-radius: 4px;
+        // padding: 8px 0;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &.active {
+            background-color: var(--color-secundario);
+            color: var(--color-primario);
+        }
+    }
+}
+
+.cantidad {
+    button {
+        background: var(--color-secundario);
+        color: var(--color-primario);
+        // font-weight: bold;
+        width: 30px;
+        height: 30px;
+        // border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+}
+
+/*boton musica*/
+.btn-audio-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    width: 45px;    
+    height: 45px;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 5000;
+
+    &:hover {
+        background-color: var(--color-acento);
+        transform: scale(1.1);
+    }
+}

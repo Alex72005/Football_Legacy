@@ -1,0 +1,117 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: var(--color-gris);
+    padding: 40px 60px 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+    width: 380px;
+    text-align: center;
+
+    .login-register-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        img {
+            width: 50px;
+        }
+
+        h1 {
+            color: var(--color-texto);
+            font-weight: 700;
+            line-height: 1.1;
+            font-size: 22px;
+        }
+    }
+
+    h2 {
+        color: var(--color-acento);
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .input-group {
+        text-align: left;
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: var(--color-texto);
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--color-secundario);
+            background-color: var(--color-primario);
+            color: var(--color-texto);
+            font-size: 14px;
+
+            &:focus {
+                border-color: var(--color-acento);
+                box-shadow: 0 0 6px var(--color-secundario);
+            }
+        }
+    }
+
+    .btn-login-register {
+        width: 100%;
+        background-color: var(--color-secundario);
+        padding: 12px !important;
+        border-radius: 6px !important; 
+        color: var(--color-primario);
+        font-weight: 600;
+        font-size: 13.33px;
+        height: auto !important; // <-- evita altura fija
+        line-height: normal !important; // <-- evita que la letra lo ensanche
+        
+        &:hover {
+            background-color: var(--color-acento);
+        }
+    }
+
+    .login-register-text {
+        margin-top: 20px;
+        color: var(--color-texto);
+        font-size: 14px;
+
+        a {
+            color: var(--color-secundario);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .volver {
+        display: inline-block;
+        margin-top: 10px;
+        color: var(--color-texto);
+        font-size: 14px;
+
+        &:hover {
+            color: var(--color-acento);
+        }
+    }
+}

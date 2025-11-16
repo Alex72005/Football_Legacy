@@ -1,0 +1,46 @@
+/* Página Camisetas */
+
+/* Equipos más populares */
+.equipos {
+    background-color: var(--color-primario);
+    padding: 40px 60px;
+    text-align: center;
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+        color: var(--color-acento);
+        text-align: left;
+        margin-top: 18.26px;
+        font-weight: 700;
+    }
+
+    .logos-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 24px;
+        row-gap: 21px;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+            filter: brightness(0.9);
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+                filter: brightness(1);
+            }
+        }
+
+        p {
+            font-size: 13px;
+            margin-top: 8px;
+            color: var(--color-texto);
+        }
+    }
+}
