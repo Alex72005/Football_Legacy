@@ -19,3 +19,15 @@
     height: 40px;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
+
+/* Zoom suave en cada slide */
+.slider-zoom {
+    animation: zoomSlide 8s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes zoomSlide {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
