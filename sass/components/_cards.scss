@@ -57,6 +57,15 @@
     color: var(--color-acento);
 }
 
+/* ===== LATIDO ICONO FAVORITOS ===== */
+@keyframes latido {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.25); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
 .precio {
     font-weight: bold;
     color: var(--color-texto);
@@ -69,14 +78,7 @@
     opacity: 0.8;
 }
 
-/* ===== LATIDO ICONO FAVORITOS ===== */
-@keyframes latido {
-    0% { transform: scale(1); }
-    25% { transform: scale(1.25); }
-    40% { transform: scale(1); }
-    60% { transform: scale(1.25); }
-    100% { transform: scale(1); }
-}
+
 
 /* =====================================================
    EFECTO FADE-IN EN CASCADA PARA LOS PRODUCTOS

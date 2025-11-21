@@ -189,18 +189,6 @@ input:focus {
   color: var(--color-acento);
 }
 
-.precio {
-  font-weight: bold;
-  color: var(--color-texto);
-}
-
-.precio-antes {
-  text-decoration: line-through;
-  color: var(--color-acento);
-  margin-right: 6px;
-  opacity: 0.8;
-}
-
 /* ===== LATIDO ICONO FAVORITOS ===== */
 @keyframes latido {
   0% {
@@ -219,6 +207,18 @@ input:focus {
     transform: scale(1);
   }
 }
+.precio {
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+.precio-antes {
+  text-decoration: line-through;
+  color: var(--color-acento);
+  margin-right: 6px;
+  opacity: 0.8;
+}
+
 /* =====================================================
    EFECTO FADE-IN EN CASCADA PARA LOS PRODUCTOS
 ===================================================== */
@@ -329,6 +329,69 @@ input:focus {
   }
   100% {
     transform: scale(1);
+  }
+}
+.glitch {
+  position: relative;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-texto);
+  animation: pulseNeon 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  color: var(--color-texto);
+}
+
+/* Capa desplazada azul */
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 cyan;
+  animation: glitch 2s infinite linear alternate-reverse;
+}
+
+/* Capa desplazada roja */
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 red;
+  animation: glitch 1.5s infinite linear alternate-reverse;
+}
+
+/* Efecto de brillo neón */
+@keyframes pulseNeon {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+  }
+  50% {
+    text-shadow: 0 0 2px #fff, 0 0 6px #00aaff, 0 0 12px #00aaff, 0 0 20px #00aaff;
+  }
+}
+/* Efecto glitch */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 /* ==========================
