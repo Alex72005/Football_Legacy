@@ -1,6 +1,6 @@
 // 1️⃣ Cargar el modal.html automáticamente
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     fetch("../pages/modal.html")
         .then(res => res.text())
         .then(html => {
@@ -16,10 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function inicializarModalSistema() {
 
     // Evento del botón Confirmar (si existe en esta página)
-    const boton = document.getElementById("btnConfirmar");
-
-    if (boton) {
-        boton.addEventListener("click", function () {
+    const btnConfirmar = document.getElementById("btnConfirmar");
+    if (btnConfirmar) {
+        btnConfirmar.addEventListener("click", function () {
             mostrarModal(
                 "success",
                 "Pedido Confirmado",
@@ -27,8 +26,29 @@ function inicializarModalSistema() {
             );
         });
     }
-}
 
+    const btnRegistro = document.getElementById("btnRegistro")
+    if (btnRegistro) {
+        btnRegistro.addEventListener("click", () => {
+            mostrarModal(
+                "success",
+                "Registro Completado",
+                "Tu cuenta ha sido creada correctamente."
+            );
+        });
+    }
+
+    const btnLogin = document.getElementById("btnLogin");
+    if (btnLogin) {
+        btnLogin.addEventListener("click", () => {
+            mostrarModal(
+                "success",
+                "Sesión Iniciada",
+                "Bienvenido nuevamente a Football Legacy."
+            );
+        });
+    }
+}
 
 // 4️⃣ Función principal del modal
 function mostrarModal(tipo, titulo, mensaje) {
